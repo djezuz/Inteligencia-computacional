@@ -1,8 +1,9 @@
+
 #ifndef PERCETRON_H
 #define PERCETRON_H
 
 
-
+#if 0
 /*int main()
 {
     std::ifstream  data("plop.csv");
@@ -23,16 +24,8 @@
 
 
 
-double productoPunto( vector< double > x, vector< double> y )    {
-   acumulador = 0
-   for( int i = 0 ; i < x.size(); i++ )    {
 
-       acumulador = x[i] +y[i]
-   }
 
-}
-
-double sumaVectores( vector< double> x, vector< double =
 
 
 class Perceptron    {
@@ -101,5 +94,6 @@ vector<int> probar( string fileName )    {
 
 };
 
+#endif
 
 #endif // PERCETRON_H
