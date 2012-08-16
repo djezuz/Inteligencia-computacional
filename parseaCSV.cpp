@@ -83,6 +83,11 @@ vector< double > parseStringDoubles( const string &s, const string & f )  {
   LEE EL ARCHIVO .CSV EN LA DIRECCION QUE RECIBE COMO PARAMETRO
   PODRIA EXPLOTAR SI EL ARCHIVO NO EXISTIESE O SI NO TIENE EL FORMATO APROPIADO ( NI PROBE )
   PARECE QUE SI ESTA BIEN FUNCIONA.
+
+
+  PROBLEMAS CONOCIDOS:
+
+  TIENE QUE TENER UN ENTER DE MAS EL .CSV SI NO, NO LEE LA ULTIMA LINEA.
 */
 
 vector< vector< double > >  parseaCSV( string nombreArchivo )  {
@@ -104,6 +109,7 @@ vector< vector< double > >  parseaCSV( string nombreArchivo )  {
         vector< double > lineaParseada = parseStringDoubles( linea,  ",");
         archivoParseado.push_back( lineaParseada );
         getline (archivo, linea);
+        cout << linea << endl;
     }
 
     archivo.close();

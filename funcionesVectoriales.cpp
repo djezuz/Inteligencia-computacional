@@ -13,6 +13,8 @@ double productoPunto( vector< double > u, vector< double> v )    {
          SI SON DISTINTOS HABRIA QUE HACER ALGO PARA QUE NO LO HAGA
          TIRAR EXCEPCION NO SE
        */
+
+       cout << "Tamaño distinto" << endl;
    }
 
    vector< double >::iterator i = u.begin();
@@ -34,6 +36,7 @@ vector< double >  sumaVectores( vector< double> u, vector< double > v )    {
           SI SON DISTINTOS HABRIA QUE HACER ALGO PARA QUE NO LO HAGA
           TIRAR EXCEPCION NO SE
         */
+        cout << "Tamaño distinto" << endl;
     }
 
 
@@ -69,6 +72,8 @@ vector< double > multiplicacionPorEscalar( double a, vector< double > v ) {
 // u - v = w
 vector< double >  restaVectores( vector< double> u, vector< double > v )    {
     if( u.size() != v.size() ) {
+
+
         /*
           SI SON DISTINTOS HABRIA QUE HACER ALGO PARA QUE NO LO HAGA
           TIRAR EXCEPCION NO SE
