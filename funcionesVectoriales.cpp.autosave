@@ -1,0 +1,15 @@
+#include <vector>
+
+using namespace std;
+
+double productoPunto( vector< double > x, vector< double> y )    {
+   acumulador = 0
+   for( int i = 0 ; i < x.size(); i++ )    {
+
+       acumulador = x[i] +y[i]
+   }
+
+}
+
+
+double sumaVectores( vector< double> x, vector< double =
